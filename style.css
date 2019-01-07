@@ -1,0 +1,142 @@
+body, html{
+    height: 100vh;
+	width: 100vw;
+    margin: 0px;
+    
+    vertical-align: baseline;
+    
+    background: url("img/asphalt-buildings-city-379419.jpg") no-repeat center center fixed;
+    background-color: #020f23;
+    background-size: cover;
+    
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.side{
+    height: 100%;
+}
+
+.left{
+    overflow: hidden;
+    float: left;
+    width: 40%;
+    
+    background-color: #304c4b;
+    
+    position: -webkit-sticky; /* Safari */
+    position: fixed;
+}
+
+.right{
+    float: right;
+    width: 60%;
+    
+}
+
+.info{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+    
+    align-items: center;
+    
+    text-align: center;
+}
+
+    .info img{
+        width: 80%;
+        border-radius: 50%;
+    }
+
+    .info h1{
+        font-size: 3.5vw * 3.5vh;
+        padding: 2%;
+        border-bottom: 0px solid white;
+    }
+
+.nav{
+    list-style: none;
+    margin: 10%;
+    text-align: center;
+    padding: 0px;
+}
+    .nav li{
+        margin: 5%;
+    }
+
+    .nav li a{
+        text-decoration: none;
+        
+        color: white;
+        font-size: 160%;
+    }
+        .nav li a:hover{
+            cursor: pointer;
+        }
+
+.socialmedia{
+    width: 100%;
+}
+
+    .socialmedia img{   
+        margin: 1vw;
+        width: 3vw;
+    }
+
+.content{
+    top: 10%;
+    
+    height: 90%;
+    margin: 10%;
+    
+    text-align: center;
+    
+}
+
+    .content h1{
+        font-size: 4vw;
+    }
+
+    .content p{
+        font-size: 2.5vw;
+    }
+
+.projectwindow{
+    background-color: rgba(255, 255, 255, .1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    height: 20%;
+    border-radius: 10%;
+
+}
+
+    .projectwindow img{
+        width: 20%;
+        border-radius: 10%;
+        float: left;
+        margin: 1%;
+    }
+
+    .projectwindow h4{
+        font-size: 20px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .projectwindow h5{
+        margin: 0px;
+        padding: 10px;
+
+    }
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 1%;
+    text-align: center;
+}

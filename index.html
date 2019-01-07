@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Karol Borecki</title>  
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    <link rel="icon" href="icon.png">
+
+</head>
+<body>
+    <div class="left side">
+        <div class="info">
+            <img src="img/me.jpeg">
+            <h1>Hi! My name is Karol.</h1>
+            
+            <ul class="nav">
+              <li><a onclick="changeContent('home')">Home</a></li>
+              <li><a onclick="changeContent('aboutme')">About me</a></li>
+              <li><a onclick="changeContent('projects')">Projects</a></li>
+              <li><a onclick="changeContent('privacy')">Privacy</a></li>
+            </ul>
+            
+            <div class="socialmedia">
+                <a href="https://www.messenger.com/t/Karol.Borecki.op" target="_blank"><img src="img/socialmedia/facebook.png"></a>
+                <a href="" target="_blank"><img src="img/socialmedia/mail.png"></a>
+                <a href="https://github.com/KarolBorecki" target="_blank"><img src="img/socialmedia/github.png"></a>
+                <a href="https://stackoverflow.com/users/7600544/karol-borecki" target="_blank"><img src="img/socialmedia/stackoverflow.png"></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="right side">
+        <div class="content" id="home">
+            <h1>Home</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+        
+        <div class="content" id="aboutme" style="display: none;">
+            <h1>About me</h1>
+            
+        </div>
+        
+        <div class="content" id="projects" style="display: none;">
+            <h1>Projects</h1>
+            <a href="https://github.com/KarolBorecki/ArenaClicker-Kivy-project" target="_blank">
+                <div class="projectwindow">
+                    <img src="projectsicons/ArenaClicker.png">
+                    <h4>ArenaClicker</h4>
+                    <h5>Python, Kivy</h5>
+                </div>
+            </a>
+        
+            <a href="https://itunes.apple.com/pl/app/decode/id1435812798?l=pl&mt=8&fbclid=IwAR2rSCwyaJ3RbZX8Q3DcNgAToLbzJaYb5onO_daD2-c2M5tPfUcOcUi90zE" target="_blank">
+                <div class="projectwindow">
+                    <img src="projectsicons/Decode.png">
+                    <h4>Decode!</h4>
+                    <h5>Python, Kivy</h5>
+                </div>
+            </a>
+
+            <a href="https://github.com/KarolBorecki/Pong" target="_blank">
+                <div class="projectwindow">
+                    <img src="projectsicons/Pong.png">
+                    <h4>PingPong for two</h4>
+                    <h5>Swift 4.x</h5>
+                </div>
+            </a>
+
+            <a href="https://play.google.com/store/apps/details?id=com.karolborecki.PongClimb" target="_blank">
+                <div class="projectwindow">
+                    <img src="projectsicons/PongClimb.png">
+                    <h4>Pong Climb</h4>
+                    <h5>Unity, C#</h5>
+                </div>
+            </a>
+        </div>
+        
+        <div class="content" id="privacy" style="display: none;">
+            <h1>Privacy</h1>
+            
+        </div>
+    </div>
+    
+    <footer class="footer">
+		<p>&copy Karol Borecki | 2019</p>
+	</footer>
+    
+    <script type="text/javascript">
+        var last = document.getElementById("home");
+        function changeContent(id) {
+          var x = document.getElementById(id);
+          if (x.style.display === "none") {
+            last.style.display = "none";
+            last = x;
+            x.style.display = "block";
+          }
+        }
+    </script>
+</body>
+</html>
