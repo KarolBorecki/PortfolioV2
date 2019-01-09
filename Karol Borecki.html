@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)file:///Users/karolborecki/Desktop/portfoliov2/index.html#home -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Karol Borecki</title>  
+
+	<link rel="stylesheet" type="text/css" href="./Karol Borecki_files/style.css">
+    <link href="./Karol Borecki_files/css" rel="stylesheet">
+    <link href="./Karol Borecki_files/css(1)" rel="stylesheet">
+    <link rel="stylesheet" href="./Karol Borecki_files/simple-line-icons.css">
+    <link rel="icon" href="file:///Users/karolborecki/Desktop/portfoliov2/icon.png">
+
+</head>
+<body>
+    <div class="left side">
+        <div class="info">
+            <img src="./Karol Borecki_files/me.jpeg">
+            <h1>Hi! My name is Karol.</h1>
+            
+            <ul class="nav">
+              <li><a href="file:///Users/karolborecki/Desktop/portfoliov2/index.html" onclick="changeContent(&#39;&#39;)">Home</a></li>
+              <li><a href="file:///Users/karolborecki/Desktop/portfoliov2/index.html#aboutme" onclick="changeContent(&#39;&#39;)">About me</a></li>
+              <li><a href="file:///Users/karolborecki/Desktop/portfoliov2/index.html#projects" onclick="changeContent(&#39;&#39;)">Projects</a></li>
+              <li><a href="file:///Users/karolborecki/Desktop/portfoliov2/index.html#privacy" onclick="changeContent(&#39;&#39;)">Privacy</a></li>
+            </ul>
+            
+            <div class="socialmedia">
+                <a href="https://www.messenger.com/t/Karol.Borecki.op" target="_blank"><img src="./Karol Borecki_files/facebook.png"></a>
+                <a href="file:///Users/karolborecki/Desktop/portfoliov2/index.html" target="_blank"><img src="./Karol Borecki_files/mail.png"></a>
+                <a href="https://github.com/KarolBorecki" target="_blank"><img src="./Karol Borecki_files/github.png"></a>
+                <a href="https://stackoverflow.com/users/7600544/karol-borecki" target="_blank"><img src="./Karol Borecki_files/stackoverflow.png"></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="right side">
+        <div class="content" id="home">
+            <h1>Home</h1>
+        </div>
+    </div>
+    
+    <footer class="footer">
+		<p>© Karol Borecki | 2019</p>
+	</footer>
+    
+    <script type="text/javascript">
+        var last = document.getElementById("home");
+        function changeContent(id) {
+          var x = document.getElementById(id);
+          if (x.style.display === "none") {
+            last.style.display = "none";
+            last = x;
+            x.style.display = "block";
+          }
+        }
+    </script>
+
+</body></html>

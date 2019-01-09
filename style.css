@@ -2,16 +2,30 @@ body, html{
     height: 100vh;
 	width: 100vw;
     margin: 0px;
+    padding: 0px;
     
     vertical-align: baseline;
+    overflow: hidden;
     
-    background: url("img/asphalt-buildings-city-379419.jpg") no-repeat center center fixed;
-    background-color: #020f23;
+    background: #1c2e36 url("img/aerial-shot-aerial-view-bird-s-eye-view-1044329.jpg") no-repeat center center fixed;
     background-size: cover;
     
     font-family: 'Montserrat', sans-serif;
     color: white;
-    text-shadow: 1px 1px black;
+    text-shadow: 2px 2px black;
+}
+.bck{
+    overflow: hidden;
+    left: -10%;
+    width: 50%;
+    height: 150%;
+    top: -25%;
+    
+    background-color: #1b2e37;
+    
+    position: -webkit-sticky; /* Safari */
+    position: fixed;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 8px 24px 0 rgba(0, 0, 0, 0.25);
 }
 a{
     color: white;
@@ -26,7 +40,7 @@ a{
     float: left;
     width: 40%;
     
-    background-color: #304c4b;
+    background-color: #1b2e37;
     
     position: -webkit-sticky; /* Safari */
     position: fixed;
@@ -88,55 +102,113 @@ a{
         width: 3vw;
     }
 
-.content{
-    top: 10%;
-    
+.content{    
     height: 90%;
-    margin: 10%;
+    margin: 5%;
     
     text-align: center;
-    
 }
 
     .content h1{
-        font-size: 4vw;
+        font-size: 3vw;
+        margin-top: 20%; 
     }
 
     .content p{
-        font-size: 2.5vw;
+        font-size: 1.5vw;
     }
 
 .projectwindow{
-    background-color: rgba(255, 255, 255, .1);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 100%;
-    height: 20%;
-    border-radius: 10%;
-
+    width: 25%;
+    float: left;
+    margin: 4%;
+    
 }
 
     .projectwindow img{
-        width: 20%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 80%;
+        margin: 0px;
+        padding: 0px;
         border-radius: 10%;
-        float: left;
-        margin: 1%;
     }
 
     .projectwindow h4{
         font-size: 20px;
         margin: 0px;
         padding: 0px;
-    }
-    .projectwindow h5{
-        margin: 0px;
-        padding: 10px;
+        position: absolute;
+        right: 0;
 
     }
 
+        .projectwindow:hover{
+    
+        }
+        .projectwindow img:hover{
+            box-shadow: 0 4px 8px 0 rgba(100, 100, 100, 0.5), 0 6px 20px 0 rgba(100, 100, 100, 0.4);
+        }
+
+.description{
+    float: left;
+}
+
+.btn {
+    height: 50px;
+    width: 400px;
+    background-color: transparent;
+    font-size: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
+    color: white;
+}
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 0 6px 10px 0 rgba(255, 255, 255, 0.5), 0 6px 20px 0 rgba(255, 255, 255, 0.25);
+    text-shadow: 1px 1px black;
+}
 .footer {
     position: fixed;
     bottom: 0;
-    right: 0;
-    margin-right: 1%;
+    left: 0;
+    margin-left: 0.5%;
     text-align: center;
+    font-size: 0.9vw;
 }
+
+.introduction {
+	height: 60%;
+	width: 40%;
+	margin-top: 2%;
+	margin-left: -20%;
+	top: 40%;
+	left: 50%;
+	text-align: center;
+}
+
+.contact{
+    top: 20%;
+    height: 60%;
+    width: 400px;
+    position: fixed;
+    margin-left: -200px;
+    Box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px;
+}
+    .contact h1{
+        margin-bottom: 50px;
+    }
+.contactline{
+    width: 90%;
+    margin: 5%;
+    display: inline-block;
+}
+    .contactline img{
+        float: left;
+        height: 60px;
+    }
+
+    .contactline h4{
+        width: 200px;
+        float: right;
+    }
