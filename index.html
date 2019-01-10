@@ -7,24 +7,23 @@
 
 	<link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
     <link rel="icon" href="icon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 <body>
         <div class="bck"></div>
 
-    <div class="left side">
+    <div class="left side" id="nav">
         <div class="info">
             <img src="img/me.jpeg">
             <h1>Hi! My name is Karol.</h1>
             
             <ul class="nav">
-              <li><a onclick="changeContent('home')">Home</a></li>
-              <li><a onclick="changeContent('aboutme')">About me</a></li>
-              <li><a onclick="changeContent('projects')">Projects</a></li>
-              <li><a onclick="changeContent('privacy')">Privacy</a></li>
+              <li><a href="#home" onclick="changeContent('home')">Home</a></li>
+              <li><a href="#aboutme" onclick="changeContent('aboutme')">About me</a></li>
+              <li><a href="#projects" onclick="changeContent('projects')">Projects</a></li>
+              <li><a href="#privacy" onclick="changeContent('privacy')">Privacy</a></li>
             </ul>
             
             <div class="socialmedia">
@@ -44,7 +43,7 @@
             <div style="margin-top: 30%;">
                 <h1>Welcome!</h1>
                 <p>I'm a mobile games developer.</p>
-                <button class="btn">Show me more</button>
+                <button class="btn" onclick="changeContent('aboutme')">Show me more</button>
             </div>
         </div>
         
@@ -89,27 +88,57 @@
         <div class="content" id="privacy" style="display: none;">
             <h1>Privacy</h1>
             <div style="margin-top: 10%;">
-                <a href="privacy_policy.html" target="_blank"><button class="btn">Link to my Privacy Policy</button></a>
+                <a href="privacy_policy.html" target="_blank"><button class="btn">Link to my Privacy Policy</button></a><br>
                 <a href="support.html" target="_blank"><button class="btn">Support</button></a>
             </div>
         </div>
     </div>
     
-    <footer class="footer">
-		<p>&copy Karol Borecki | 2019</p>
-	</footer>
+    <div class="back">
+        <a href="#nav" class="btn">BACK</a>
+    </div>
     
+    <footer class="footer">
+		<p>&copy; Karol Borecki | 2019</p>
+	</footer>
     <script type="text/javascript">
         var last = document.getElementById("home");
         function changeContent(id) {
           var x = document.getElementById(id);
           if (x.style.display === "none") {
-            window.scrollTo(0,0); 
             last.style.display = "none";
             last = x;
             x.style.display = "block";
           }
         }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+      });
+    } // End if
+  });
+});
     </script>
 </body>
 </html>

@@ -39,6 +39,7 @@ a{
     overflow: hidden;
     float: left;
     width: 40%;
+    max-height: 100%;
     
     background-color: #1b2e37;
     
@@ -53,6 +54,7 @@ a{
 }
 
 .info{
+    max-height: 100%;
     width: 70%;
     margin-left: 15%;
     margin-top: 5%;
@@ -155,9 +157,9 @@ a{
 
 .btn {
     height: 50px;
-    width: 400px;
+    width: 40%;
     background-color: transparent;
-    font-size: 20px;
+    font-size: 1.5vw;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 20px;
     color: white;
@@ -166,6 +168,17 @@ a{
     cursor: pointer;
     box-shadow: 0 6px 10px 0 rgba(255, 255, 255, 0.5), 0 6px 20px 0 rgba(255, 255, 255, 0.25);
     text-shadow: 1px 1px black;
+}
+.back{
+    text-align: center;
+    margin-left: 40%;
+    top: 0;
+    bottom: 0;
+    padding: 1%;
+    font-size: 2vw;
+    width: 20%;
+    display: none;
+    position: absolute;
 }
 .footer {
     position: fixed;
@@ -189,9 +202,9 @@ a{
 .contact{
     top: 20%;
     height: 60%;
-    width: 400px;
+    width: 40%;
     position: fixed;
-    margin-left: -200px;
+    margin-left: -20%;
     Box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 5px;
 }
@@ -209,6 +222,57 @@ a{
     }
 
     .contactline h4{
-        width: 200px;
+        width: 50%;
         float: right;
     }
+
+@media only screen and (max-width : 800px) {
+    body, html{
+        overflow: scroll;
+    }
+    .bck{
+        width: 0%;
+        height: 100%;
+        left: 50%;
+        top: 0;
+    }
+    .side{
+        width: 100%;
+        overflow: scroll;
+        float: none;
+    }
+    .left{
+        position: static;
+    }
+    .info{
+        margin-top: 1%;
+    }
+    .info img{
+        width: 40%;
+    }
+    .socialmedia img{   
+        width: 5vw;
+    }
+    .footer{
+        font-size: 2vw;
+    }
+    
+    .content{
+        top: 30%;
+    }
+    .content h1{
+        font-size: 7vw;
+        margin-top: 20%; 
+    }
+
+    .content p{
+        font-size: 4vw;
+    }
+    .btn{
+        font-size: 3vw;
+    }
+    .back{
+        display: block;
+        position: static;
+    }
+}
