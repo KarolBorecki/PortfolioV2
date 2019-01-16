@@ -156,9 +156,23 @@ a{
             box-shadow: 0 4px 8px 0 rgba(100, 100, 100, 0.5), 0 6px 20px 0 rgba(100, 100, 100, 0.4);
         }
 
-.description{
+.projectdetails img{
     float: left;
+    width: 20%;
+    margin: 2.5%;
+    box-shadow: 0 4px 8px 0 rgba(100, 100, 100, 0.5), 0 6px 20px 0 rgba(100, 100, 100, 0.4);
 }
+
+    .projectdetails a:hover{
+        cursor: pointer;
+        text-shadow: 1px 1px white;
+    }
+    .projectdetails button{
+        margin: 5%;
+    }
+    .description{
+        float: left;
+    }
 
 .btn {
     height: 50px;

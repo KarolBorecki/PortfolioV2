@@ -54,35 +54,99 @@
         
         <div class="content" id="projects" style="display: none;">
             <h1>My Projects</h1>
-            <a href="https://github.com/KarolBorecki/ArenaClicker-Kivy-project" target="_blank">
+            <a onclick="changeContent('arenaclicker')" target="_blank">
                 <div class="projectwindow">
                     <img src="projectsicons/ArenaClicker.png">
                 </div>
             </a>
         
-            <a href="https://itunes.apple.com/pl/app/decode/id1435812798?l=pl&mt=8&fbclid=IwAR2rSCwyaJ3RbZX8Q3DcNgAToLbzJaYb5onO_daD2-c2M5tPfUcOcUi90zE" target="_blank">
+            <a onclick="changeContent('decode')" target="_blank">
                 <div class="projectwindow">
                     <img src="projectsicons/Decode.png">
                 </div>
             </a>
 
-            <a href="https://github.com/KarolBorecki/Pong" target="_blank">
+            <a onclick="changeContent('pong')" target="_blank">
                 <div class="projectwindow">
                     <img src="projectsicons/Pong.png">
                 </div>
             </a>
 
-            <a href="https://play.google.com/store/apps/details?id=com.karolborecki.PongClimb" target="_blank">
+            <a onclick="changeContent('pongclimb')" target="_blank">
                 <div class="projectwindow">
                     <img src="projectsicons/PongClimb.png">
                 </div>
             </a>
             
-            <a href="https://play.google.com/store/apps/details?id=com.karolborecki.PongClimb" target="_blank">
+            <a onclick="changeContent('simplyar')" target="_blank">
                 <div class="projectwindow">
                     <img src="projectsicons/SimplyAR.png">
                 </div>
             </a>
+        </div>
+        <div class="projectdetails content" id="decode" style="display: none;">
+            <h1>Decode!</h1>
+            <h4>Decode is a simply arcade game in which you need to set blocks of the same color in the row. Projects has been written in Python2 and Kivy 10.x.</h4>
+            <img src="projectsscreenshots/IMG_0809.PNG">
+            <img src="projectsscreenshots/IMG_0810.PNG">
+            <img src="projectsscreenshots/IMG_0811.PNG">
+            <img src="projectsscreenshots/IMG_0812.PNG">
+            
+            <button class="btn" onclick="window.open('https://itunes.apple.com/us/app/decode/id1435812798?ls=1&mt=8');">App Store</button><br>
+            
+            <a onclick="changeContent('projects')">BACK</a>
+        </div>
+        
+        <div class="projectdetails content" id="arenaclicker" style="display: none;">
+            <h1>ArenaClicker</h1>
+            <h4>Arena clicker is a clicker-type game in which you need to beat your opponents.Projects has been written in Python3 and Kivy 10.x.</h4>
+            <img src="projectsscreenshots/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202019-01-03%20at%2022.15.00.png">
+            <img src="projectsscreenshots/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202019-01-03%20at%2022.15.14.png">
+            <img src="projectsscreenshots/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202019-01-03%20at%2022.15.42.png">
+            <img src="projectsscreenshots/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202019-01-03%20at%2022.16.09.png">
+            
+            <button class="btn" onclick="window.open('https://itunes.apple.com/us/app/arenaclicker/id1448413451?ls=1&mt=8');">App Store</button><br>
+            
+            <a onclick="changeContent('projects')">BACK</a>
+        </div>
+        
+         <div class="projectdetails content" id="pong" style="display: none;">
+            <h1>PingPong for two</h1>
+            <h4>PingPong for two is a classic Pong game from 1972. Projects has been written in Swift 4.x.</h4>
+            <img src="projectsscreenshots/Pong%20-%202019-01-02%20at%2023.42.36.png">
+            <img src="projectsscreenshots/Pong%20-%202019-01-02%20at%2023.42.40.png">
+            <img src="projectsscreenshots/Pong%20-%202019-01-02%20at%2023.42.46.png">
+            <img src="projectsscreenshots/Pong%202019-01-02%20at%2023.42.57.png">
+            
+            <button class="btn" onclick="window.open('https://github.com/KarolBorecki/Pong');">App Store</button><br>
+            
+            <a onclick="changeContent('projects')">BACK</a>
+        </div>
+        
+        
+        <div class="projectdetails content" id="pongclimb" style="display: none;">
+            <h1>PongClimb</h1>
+            <h4>PongClimb is a arcade game in which you need to avoid blocks by shooting into them. Projects has been written in Unity and C#.</h4>
+            <img src="projectsscreenshots/1.png">
+            <img src="projectsscreenshots/2.png">
+            <img src="projectsscreenshots/4.png">
+            <img src="projectsscreenshots/9.png">
+            
+            <button class="btn" onclick="window.open('https://github.com/KarolBorecki/PongClimb');">App Store</button><br>
+            
+            <a onclick="changeContent('projects')">BACK</a>
+        </div>
+        
+        <div class="projectdetails content" id="simplyar" style="display: none;">
+            <h1>SimplyAr</h1>
+            <h4>SimplyAIR is a project which I made only for educational purpose. It's an app that use augmented reality. It has been made in Unity using Vuforia.</h4>
+            <img src="projectsscreenshots/AR%203245.PNG">
+            <img src="projectsscreenshots/AR%203246.PNG">
+            <img src="projectsscreenshots/AR%203247.PNG">
+            <img src="projectsscreenshots/AR%203248.PNG">
+            
+            
+            <a onclick="changeContent('projects')">BACK</a>
         </div>
         
         <div class="content" id="privacy" style="display: none;">
