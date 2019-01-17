@@ -150,7 +150,7 @@ a{
     }
 
         .projectwindow:hover{
-    
+            cursor: pointer;
         }
         .projectwindow img:hover{
             box-shadow: 0 4px 8px 0 rgba(100, 100, 100, 0.5), 0 6px 20px 0 rgba(100, 100, 100, 0.4);
@@ -200,6 +200,10 @@ a{
     position: absolute;
     margin-bottom: 10%;
     border: 1px 1px white;
+}
+
+.back:hover{
+    text-shadow: none;
 }
 .footer {
     position: fixed;
@@ -295,6 +299,7 @@ a{
     .back{
         display: block;
         position: static;
-        border: 1px 1px white;
+        border: 1px solid white;
     }
+    
 }
